@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arikrishnan Travels</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">🚌 Arikrishnan Travels</div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Travel With Arikrishnan Travels</h1>
+            <p>Safe Journey • Comfortable Travel • Best Service</p>
+
+            <a href="#booking" class="btn">Book Your Trip</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <h2>About Us</h2>
+
+        <div class="about-content">
+            <div>
+                <h3>Welcome to Arikrishnan Travels</h3>
+                <p>
+                    Arikrishnan Travels provides comfortable and reliable
+                    transportation services for families, friends,
+                    companies and tour groups.
+                </p>
+
+                <p>
+                    Our goal is to make every journey safe, comfortable
+                    and memorable.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <h3>🌟 Why Choose Us?</h3>
+                <p>✔ Experienced Drivers</p>
+                <p>✔ Comfortable Vehicles</p>
+                <p>✔ Affordable Prices</p>
+                <p>✔ 24/7 Customer Support</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section services">
+        <h2>Our Services</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">🚌</div>
+                <h3>Bus Rental</h3>
+                <p>Comfortable buses for family and group trips.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🚐</div>
+                <h3>Van Rental</h3>
+                <p>Perfect vehicles for small groups and family tours.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🏖️</div>
+                <h3>Tour Packages</h3>
+                <p>Enjoy memorable trips to popular destinations.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">💼</div>
+                <h3>Corporate Travel</h3>
+                <p>Reliable transportation for company requirements.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Packages -->
+    <section id="packages" class="section">
+        <h2>Popular Packages</h2>
+
+        <div class="packages">
+
+            <div class="package">
+                <h3>🏝️ Kerala Trip</h3>
+                <p>3 Days / 2 Nights</p>
+                <h4>Starting ₹7,999</h4>
+                <button onclick="selectPackage('Kerala Trip')">
+                    Select Package
+                </button>
+            </div>
+
+            <div class="package">
+                <h3>⛰️ Ooty Trip</h3>
+                <p>2 Days / 1 Night</p>
+                <h4>Starting ₹4,999</h4>
+                <button onclick="selectPackage('Ooty Trip')">
+                    Select Package
+                </button>
+            </div>
+
+            <div class="package">
+                <h3>🌊 Goa Trip</h3>
+                <p>4 Days / 3 Nights</p>
+                <h4>Starting ₹9,999</h4>
+                <button onclick="selectPackage('Goa Trip')">
+                    Select Package
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Booking -->
+    <section id="booking" class="section booking">
+        <h2>Book Your Journey</h2>
+
+        <form id="bookingForm">
+
+            <input type="text" id="name"
+                   placeholder="Your Name" required>
+
+            <input type="tel" id="phone"
+                   placeholder="Phone Number" required>
+
+            <input type="text" id="from"
+                   placeholder="From Location" required>
+
+            <input type="text" id="to"
+                   placeholder="Destination" required>
+
+            <input type="date" id="date" required>
+
+            <select id="vehicle" required>
+                <option value="">Select Vehicle</option>
+                <option>Mini Bus</option>
+                <option>Bus</option>
+                <option>Tempo Traveller</option>
+                <option>Van</option>
+            </select>
+
+            <button type="submit" class="submit-btn">
+                Submit Booking
+            </button>
+
+        </form>
+
+        <p id="message"></p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+        <h2>Contact Us</h2>
+
+        <div class="contact-box">
+            <p>📞 Phone: +91 98765 43210</p>
+            <p>📧 Email: arikrishnantravels@gmail.com</p>
+            <p>📍 Location: Tamil Nadu, India</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Arikrishnan Travels. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
